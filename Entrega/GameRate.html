@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GameRate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <!--<link rel="stylesheet" href="bootstrap.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body background ="fondo.jpg" onload = "addUsername();"> 
+<div class="container-fluid">
+
+<div class="jumbotron"style="background-color:#6CCD6C;">
+<div class="row">   
+<div class="col-sm-5" > <pre>
+<p class="text-center"><font size = 20>
+GameRate
+ 
+</font></p></pre></div>
+
+<div class="col-sm-4" > <pre>
+<h3>Categorias:
+- Arcade
+- Plataformas
+- Aventuras
+- Estrategia
+ 
+  
+<h3></pre>
+</div>
+
+<div class="col-sm-3"  >
+<!-- Autentificar usuario -->
+  <form role="form">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+</div>
+
+<div class="btn-group">
+    <button type="button" class="btn btn-success">Portada</button>
+    <button type="button" class="btn btn-success">Información</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+      Categorias <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Arcade</a></li>
+        <li><a href="#">Plataformas</a></li>
+		<li><a href="#">Aventuras</a></li>
+		<li><a href="#">Estrategia</a></li>
+      </ul>
+    </div>
+	<div class="btn-group">
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+      Administradores <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Guillermo Riverola</a></li>
+        <li><a href="#">Sergi Galcerán</a></li>
+		<li><a href="#">Antonio LLadó</a></li>
+		
+      </ul>
+    </div>
+    <button type="button" class="btn btn-success">Ayuda</button>
+  </div>
+ 
+  </div>
+  
+   <div class="row">
+   <!-- Columna izquierda de información-->
+  <div class="col-sm-2" >
+  <div class="thumbnail"style="background-color:#6CCD6C;">
+  <div class="text-center">
+  <h4>Filtrar:<h4>   
+  <h3> <h3>
+  <div class="btn-group-vertical">
+  <button type="button" class="btn btn-success btn-block">Mas recientes</button>
+  <button type="button" class="btn btn-success btn-block">Favoritos</button>
+  <button type="button" class="btn btn-success btn-block">Mas votados</button>
+  <button type="button" class="btn btn-success btn-block">Puntuación</button>
+  <div class="btn-group">
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+      Fechas <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Hoy</a></li>
+        <li><a href="#">1 semana</a></li>
+		<li><a href="#">1 mes</a></li>
+		
+      </ul>
+    </div>
+  
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  
+  <!-- Columna central de noticias -->
+  <div class="col-sm-8" >
+  <div class="thumbnail"style="background-color:#6CCD6C;">
+  <h3>Noticias:<h3>
+  <div class="text-center">
+  
+  <!-- Primera noticia-->
+  <div class="thumbnail"style="background-color:#6CCD6C;">
+  <a href="guillermo.jpg"><img src="guillermo.jpg" class="img-rounded" alt="" width="600" height="600"></a>
+  <h3><h3>
+  <div class="row">
+  <div class="col-sm-10" >
+  <pre> <p class="text-left">Comentario que hace la persona que sube la foto. Puede escribir lo que sea, dependiendo de lo que considere necesario.</p></pre>
+  </div>
+  <div class="col-sm-2" >
+  
+  <p class="text-right">  <button type="button" class="btn btn-warning">Me gusta</button></p>
+  </div>
+  </div>
+  </div><!-- Fin de noticia-->
+  
+  
+  <!-- Segunda noticia-->
+  <div class="thumbnail"style="background-color:#6CCD6C;">
+  <a href="javier.jpg"><img src="javier.jpg" class="img-rounded" alt="" width="600" height="600"></a>
+  <h3><h3>
+  <div class="row">
+  <div class="col-sm-10" >
+  <pre> <p class="text-left">Comentario que hace la persona que sube la foto. Puede escribir lo que sea, dependiendo de lo que considere necesario.</p></pre>
+  </div>
+  <div class="col-sm-2" >
+  
+  <p class="text-right">  <button type="button" class="btn btn-warning">Me gusta</button></p>
+  </div>
+  </div>
+  </div><!-- Fin de noticia-->
+  
+   
+  
+  </div>
+  </div>
+  </div>
+  <!-- Columna derecha-->
+  <div class="col-sm-2" > 
+  <div class="thumbnail"style="background-color:#6CCD6C;">
+  <div class="text-center">
+  <h3>Usuarios conectados:<h3>
+  <h3><h3>
+  <a href="guillermo.jpg"><img src="guillermo.jpg" class="img-rounded" alt="" width="100" height="100"></a>
+  <h3><h3>
+  <a href="javier.jpg"><img src="javier.jpg" class="img-rounded" alt="" width="100" height="100"></a>
+  <h3><h3>
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <h2>Esto está por debajo de las columnas....</h2>
+
+</div>  
+</body>
+</html>
+  
+  
+  

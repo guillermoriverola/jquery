@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>GitHub Example</title>
+  </head>
+  <body>
+    <h2>GitHub!</h2>
+    
+	
+	<div class="row">
+      <h3 class="panel-title">Mostrar Repositorios</h3>
+      <button type="button" class="btn btn-info" id="button_get_repos">Mostrar</button> </div>
+	  <span id="repos_result"></span> 
+	 
+	 
+	 <div class="row">
+      <h3 class="panel-title">Get Repository</h3>
+      <button type="button" class="btn btn-info"
+        id="button_get_repo">Get Repository</button> <span class="input-group-addon">Name</span>
+      <input class="form-control" id="repository_name" type="text"> </div>
+    <span id="get_repo_result"></span> 
+	
+	<div class="row">
+      <h3 class="panel-title">Crear Nuevo Repositorio</h3>
+      <span class="input-group-addon">Nombre</span> <input class="form-control" id="repository_name_to_create"
+        type="text"> <span class="input-group-addon">Descripcion</span> <input
+        class="form-control" id="description_to_create" type="text">
+      <button type="button" class="btn btn-info" id="button_to_create">Crear</button> 
+	   <span id="create_result"></span>
+    </div>
+	<div class="row">
+      <h3 class="panel-title">Eliminar Repositorio</h3>
+      <span class="input-group-addon">Nombre</span> <input class="form-control" id="repository_name_to_delete" type="text"> 
+		<button type="button" class="btn btn-info" id="button_to_delete">Eliminar</button> 
+		<div class="panel-body">
+			<span id="delete_result"></span>
+		</div>
+    </div>
+    <div class="row">
+      <h3 class="panel-title">Editar Repositorio</h3>
+      <span class="input-group-addon">Nombre</span> <input class="form-control" id="repository_name_get_to_edit" type="textbox">
+	  <span class="input-group-addon">Descripcion</span> <input class="form-control" id="description_get_to_edit" type="textbox">
+	  <button type="button" class="btn btn-info" id="button_get_repo2">Consultar Repositorio</button>
+	  <button type="button" class="btn btn-info" id="button_edit_repo">Guardar Repositorio</button>
+	  <h3> </h3>
+	  <span id="get_repo_result2"></span> 	  
+	  <h3> </h3>
+	  <span id="update_result"></span>
+	   
+	  <button type="button" class="btn btn-info" id="button_edit_repo">Guardar Repositorio</button>
+	  
+	  
+	  
+    </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="weblinking.js"></script>
+
+    <!-- Event and AJAX functions -->
+    <script src="github.js"></script>
+	<!--<script src="github-pagination.js"></script>-->
+  </body>
+</html>
